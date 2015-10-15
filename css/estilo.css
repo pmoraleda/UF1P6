@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div#capsalera{
+    margin: auto;
+    width: 100%;
+    font-family: fantasy;
+    position: fixed;
+}
+ul,ol{
+ list-style: none; /* Treu els punts dels elements del menu*/
+}
+.nav li a{
+    background-color: black;
+    color: white; /*color lletra*/
+    text-decoration: none; /* treu subrallat */
+    padding: 10px 15px; /* relleno a les casellas*/
+    display: block; /* fa que cada element ocupi una linia */
+    min-width: 140px;
+}
+.nav li{
+    width: 20%;   
+}
+.nav>li{
+    float: left;
+}
+.nav li a:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    width: 280px;
+    margin-right: -255px;
+}
+.nav li:hover>ul{
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+}
+.nav li ul li ul{
+    right: -140px;
+    top: 0px;
+}
+div#paragraf{
+    padding-top: 39px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: darkred;
+    color: gray;
+    font-style: italic;
+}
